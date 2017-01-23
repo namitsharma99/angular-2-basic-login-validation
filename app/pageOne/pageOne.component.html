@@ -1,0 +1,60 @@
+<!-- 
+<h4>Enter user name -</h4>
+<form (keydown.enter)="submitFunction(textBox.value)">
+	<input #textBox type="text" placeholder="Type name here..." >
+</form> -->
+
+<html>
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="sampleJS.js">
+	function mediator() {
+		alert('mediator');
+		sayHello();
+	}
+</script> -->
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<h3>Login Page</h3>
+				<div id='usernameerror'></div>
+				<br>
+
+				<h4>Username</h4>
+				<br> <input #textBox type="text" id='uname'
+					placeholder="Type name here..." required="required"
+					(keyup)="instantValidationOfUserName()"> <br>
+				<h4>Password</h4>
+				<br> <input #password type="password" id="pwd" class="masked"
+					placeholder="Type password here..." required="required">
+				<button (click)="showPasswd()">Show</button>
+				<button (click)="hidePasswd()">Hide</button>
+				<br>
+
+				<h4></h4>
+				<br>
+				<button (click)="submitFunction(textBox.value,password.value)"
+					type="submit">Login</button>
+			</div>
+			<div>
+				<h4></h4>
+				<br>
+				<!-- <button (click)="sayHi()">calling JS via TS</button>
+				 			<p><a href="#" on="mediator()" (click)="mediator">Click Me</a></p>
+ -->
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
